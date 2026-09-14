@@ -1,0 +1,29 @@
+name: Validate TRAE skills
+
+on:
+  pull_request:
+    paths:
+      - "trae-rd-system/skills/**"
+      - "trae-rd-system/scripts/**"
+      - ".github/workflows/validate-skills.yml"
+  push:
+    branches: [main]
+    paths:
+      - "trae-rd-system/skills/**"
+      - "trae-rd-system/scripts/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate skill structure and registry
+        run: python3 trae-rd-system/scripts/validate_skills.py
+      - name: Build release archive
+        run: >-
+          python3 trae-rd-system/scripts/package_skills.py
+          --output /tmp/skills.zip
+          --dist-dir /tmp/skill-packages

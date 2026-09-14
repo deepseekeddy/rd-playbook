@@ -1,0 +1,11 @@
+姓名,飞书账号,GitHub用户名,主角色,副角色,负责产品或目录,默认审核范围,备份人,当前在制上限,通知方式
+Eddy Gao,eddy.gao@wefordigital.com,deepseekeddy,PM,,产品需求,PRD/业务验收,陈涛,2,飞书私聊
+李婷,liting@wefordigital.com,liting-design,设计,,Figma/设计系统,设计验收,Eddy Gao,2,飞书私聊
+陈涛,chentao@wefordigital.com,chentao-tl,TL,架构,全局架构/核心模块,TSD/高风险PR/发布,张强,2,飞书私聊+GitHub
+赵明,zhaoming@wefordigital.com,zhaoming-fe,开发,前端,/apps/web,前端PR,孙丽,2,飞书私聊+GitHub
+孙丽,sunli@wefordigital.com,sunli-fe,开发,前端,/apps/web,前端PR,赵明,2,飞书私聊+GitHub
+张强,zhangqiang@wefordigital.com,zhangqiang-be,开发,后端,/services,后端PR,周杰,2,飞书私聊+GitHub
+周杰,zhoujie@wefordigital.com,zhoujie-be,开发,后端,/services,后端PR,张强,2,飞书私聊+GitHub
+吴磊,wulei@wefordigital.com,wulei-dev,开发,通用,按实际模块,通用PR,陈涛,2,飞书私聊+GitHub
+赵雪,zhaoxue@wefordigital.com,zhaoxue-qa,QA,,/tests,测试策略/质量验收,陈涛,2,飞书私聊+GitHub
+周宁,zhouning@wefordigital.com,zhouning-sre,SRE,DevOps,/deploy/.github,发布/回滚/监控,陈涛,2,飞书私聊+GitHub

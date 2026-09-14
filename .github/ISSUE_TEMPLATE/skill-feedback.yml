@@ -1,0 +1,50 @@
+name: Skill feedback / Skill 使用反馈
+description: 记录真实使用中的误触发、遗漏、错误或返工
+title: "[SKILL-FEEDBACK] "
+labels: ["skill-feedback"]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill 名称与版本
+      placeholder: prd-authoring 0.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 问题类型
+      options:
+        - 未触发
+        - 错误触发
+        - 输入要求不清
+        - 关键字段遗漏
+        - 结果不准确
+        - 操作越权或审批边界问题
+        - 模板或资源问题
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: 脱敏后的原始请求与上下文
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: 实际结果与期望结果
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: 影响与人工修正
+      description: 说明造成的等待、返工、遗漏或风险。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 可复现证据
+      description: 可附脱敏截图、文档或 PR 链接；不要提交客户隐私或密钥。

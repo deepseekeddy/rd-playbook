@@ -1,0 +1,66 @@
+name: Delivery Task / 交付任务
+description: 只分配给一个主责人的可独立验收任务
+title: "[ROLE][REQ-YYYY-NNN] "
+labels: ["type:task"]
+body:
+  - type: input
+    id: parent
+    attributes:
+      label: 父需求
+      placeholder: "#123 / REQ-2026-042"
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: 唯一主责人
+      placeholder: "@github-user"
+    validations:
+      required: true
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer
+      placeholder: "@github-user or @YOUR_ORG/team"
+    validations:
+      required: true
+  - type: textarea
+    id: inputs
+    attributes:
+      label: 输入及版本
+      description: PRD/TSD/Figma/依赖 Issue。
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: 目标、范围与范围外
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 可验证的完成条件
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 需要提交的证据
+      description: PR、测试结果、文档、截图、指标或发布链接。
+    validations:
+      required: true
+  - type: input
+    id: estimate
+    attributes:
+      label: Estimate
+      placeholder: "1 / 2 / 3 / 5 / 8"
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: 目标日期
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true

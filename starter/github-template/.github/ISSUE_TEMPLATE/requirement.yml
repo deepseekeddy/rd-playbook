@@ -1,0 +1,62 @@
+name: Requirement / 父需求
+description: 创建并跟踪一个已进入研发的父需求
+title: "[REQ-YYYY-NNN] "
+labels: ["type:requirement"]
+body:
+  - type: input
+    id: req_id
+    attributes:
+      label: REQ-ID
+      placeholder: REQ-2026-042
+    validations:
+      required: true
+  - type: input
+    id: dri
+    attributes:
+      label: 父需求 DRI
+      placeholder: "@github-user"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 飞书需求主记录
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: 目标与成功指标
+      description: 说明用户、问题、业务目标和可验证指标。
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 范围与范围外
+    validations:
+      required: true
+  - type: textarea
+    id: baselines
+    attributes:
+      label: 已批准基线
+      description: 填写 PRD、TSD、Figma 的状态、版本和链接。
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 整体验收条件
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: 风险、依赖和未决项
+  - type: input
+    id: target
+    attributes:
+      label: 目标日期/版本
+    validations:
+      required: true

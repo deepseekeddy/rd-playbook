@@ -1,0 +1,42 @@
+name: Bug / 缺陷
+description: 报告可复现并可验收的缺陷
+title: "[BUG][REQ-YYYY-NNN] "
+labels: ["type:bug"]
+body:
+  - type: input
+    id: related
+    attributes:
+      label: 关联 REQ/Issue/PR
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 严重度
+      options: [P0, P1, P2, P3]
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 环境和版本
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 预期结果与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 日志、截图、请求或其他证据
+    validations:
+      required: true

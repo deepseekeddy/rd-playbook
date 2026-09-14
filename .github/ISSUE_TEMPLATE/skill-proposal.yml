@@ -1,0 +1,43 @@
+name: Skill proposal / Skill 提案
+description: 提议新增或实质扩展一个企业 Skill
+title: "[SKILL] "
+labels: ["skill-proposal"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 要解决的真实问题
+      description: 描述当前工作如何完成、哪里容易遗漏或返工。
+    validations:
+      required: true
+  - type: textarea
+    id: triggers
+    attributes:
+      label: 应触发与不应触发的请求
+      description: 至少各给两个真实或脱敏示例。
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: 期望结果与完成定义
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: 业务 Owner 与技术 Maintainer
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 所需输入、工具、模板和审批点
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: 越权、误触发和错误输出风险
+    validations:
+      required: true

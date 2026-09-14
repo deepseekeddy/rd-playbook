@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "library_version": "0.1.0",
+  "skills": [
+    {"name": "requirement-intake", "version": "0.1.0", "wave": "P0", "owner_role": "PM", "status": "pilot"},
+    {"name": "prd-authoring", "version": "0.1.0", "wave": "P0", "owner_role": "PM", "status": "pilot"},
+    {"name": "tsd-authoring", "version": "0.1.0", "wave": "P0", "owner_role": "TL", "status": "pilot"},
+    {"name": "code-review", "version": "0.1.0", "wave": "P0", "owner_role": "TL", "status": "pilot"},
+    {"name": "release-readiness", "version": "0.1.0", "wave": "P0", "owner_role": "SRE", "status": "pilot"},
+    {"name": "prd-review", "version": "0.1.0", "wave": "P1", "owner_role": "PM", "status": "draft"},
+    {"name": "figma-handoff", "version": "0.1.0", "wave": "P1", "owner_role": "Design", "status": "draft"},
+    {"name": "implementation-planning", "version": "0.1.0", "wave": "P1", "owner_role": "TL", "status": "draft"},
+    {"name": "test-acceptance", "version": "0.1.0", "wave": "P1", "owner_role": "QA", "status": "draft"},
+    {"name": "delivery-orchestrator", "version": "0.1.0", "wave": "P2", "owner_role": "TL", "status": "draft"},
+    {"name": "operate-observe", "version": "0.1.0", "wave": "P2", "owner_role": "SRE", "status": "draft"}
+  ]
+}

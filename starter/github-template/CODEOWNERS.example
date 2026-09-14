@@ -1,0 +1,8 @@
+# 将此文件根据真实目录和 GitHub Teams 修改后，放到 .github/CODEOWNERS
+*              @your-org/maintainers
+/apps/web/     @your-org/frontend
+/services/     @your-org/backend
+/tests/        @your-org/qa
+/.github/      @your-org/maintainers
+/deploy/       @your-org/maintainers
+/docs/         @your-org/product-design @your-org/maintainers
